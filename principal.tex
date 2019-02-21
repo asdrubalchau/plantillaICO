@@ -1,0 +1,61 @@
+\documentclass[12pt,letterpaper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{cite} % para contraer referencias
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{tocbibind}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{setspace}
+\hypersetup{
+	pdftitle={Tu Nombre},
+	pdfauthor={},
+	pdfsubject={},
+	pdfkeywords={},
+	bookmarksnumbered=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	linkcolor=black,
+	citecolor=blue,
+	colorlinks=true,
+	pdfstartview=Fit,
+	pdfpagemode=UseOutlines,
+	pdfpagelayout=TwoPageRight
+}
+\renewcommand{\chaptername}{Capítulo}
+\renewcommand{\contentsname}{Contenido}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\listfigurename}{Lista de figuras}
+\renewcommand{\listtablename}{Lista de tablas}
+%\renewcommand{\refname}{Referencias}
+\renewcommand{\bibname}{Referencias}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[letterpaper, left=3.5cm, right=2.5cm, top=3.5cm, bottom=2.5cm]{geometry}
+\author{Tu nomre, Asdrúbal López Chau}
+\title{Tesis}
+\usepackage[none]{hyphenat}
+\begin{document}
+\frontmatter
+\include{portada}
+\tableofcontents
+\listoffigures
+\listoftables
+\spacing{1.5}
+\mainmatter
+     \sloppy 
+\include{introduccion}
+
+\include{desarrollo}
+%Agregar más capítulos si es necesario
+\include{conclusiones}
+\backmatter
+\cleardoublepage
+\phantomsection
+\bibliographystyle{acm}
+\addcontentsline{toc}{chapter}{Referencias}
+\bibliography{bibliografia}
+
+\end{document}
